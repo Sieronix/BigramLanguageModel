@@ -57,10 +57,3 @@ The project is divided into three main components:
 - Libraries: `tkinter`, `pandas`, `numpy`
 
 ---
-
-## **Usage**
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/simple-language-model.git
-   cd simple-language-model
