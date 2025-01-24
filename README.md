@@ -1,35 +1,60 @@
 Simple Bigram Language Model
-This project implements a bigram language model that predicts and generates text based on word pairs. It includes a user-friendly GUI for visualizing word probabilities and generating sentences interactively.
+This project implements a bigram language model that predicts and generates text based on word pairs. It includes a user-friendly GUI for visualizing word probabilities and generating sentences interactively. The model is designed to be simple, lightweight, and easy to use, making it ideal for learning purposes or small-scale text generation tasks.
 
-Features
-Bigram Model: Predicts the next word based on the previous word using probability distributions.
+Key Features
+Bigram Model:
 
-Probability Table: Displays word pair probabilities in a structured table format.
+Predicts the next word based on the previous word using probability distributions.
 
-Sentence Generation: Generates sentences starting with a user-provided word, stopping at sentence-ending punctuation (., !, ?).
+Trains on a text dataset to learn word pair frequencies.
 
-Interactive GUI: Built with Tkinter, allowing users to search the probability table and generate sentences dynamically.
+Probability Table:
 
-How It Works
-Training:
+Displays word pair probabilities in a structured table format.
 
-The model reads text data from a file (training_data.txt).
+Allows searching and filtering by specific words.
 
-It tokenizes the text into words and builds bigrams (pairs of consecutive words).
+Sentence Generation:
 
-It calculates probabilities for each word pair.
+Generates sentences starting with a user-provided word.
 
-GUI:
+Stops generating at sentence-ending punctuation (., !, ?).
 
-Search: Users can search the probability table for specific words.
+Interactive GUI:
 
-Generate Sentences: Users can input a starting word, and the model generates a sentence based on the learned probabilities.
+Built with Tkinter for a seamless user experience.
+
+Provides a clean interface for searching probabilities and generating sentences.
+
+System Architecture
+The project is divided into three main components:
+
+Model Training:
+
+Reads text data from a file (training_data.txt).
+
+Tokenizes the text and builds bigrams (pairs of consecutive words).
+
+Calculates probabilities for each word pair.
+
+GUI Interface:
+
+Displays the probability table in a scrollable and searchable format.
+
+Allows users to input a starting word and generate sentences.
 
 Text Generation:
 
-The model generates sentences by predicting the next word iteratively.
+Uses the trained bigram model to predict and generate text iteratively.
 
-It stops generating when it encounters sentence-ending punctuation (., !, ?).
+Stops generation when sentence-ending punctuation is encountered.
+
+Use Cases
+Educational Tool: Learn how language models work by experimenting with bigrams.
+
+Text Generation: Generate simple sentences for creative writing or prototyping.
+
+Probability Visualization: Explore word pair probabilities in a structured format.
 
 Requirements
 Python 3.x
